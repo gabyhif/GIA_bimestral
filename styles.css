@@ -1,0 +1,165 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+  }
+  
+  body {
+    background-color: #fff0f5; /* Cor de fundo rosa claro */
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Estilo do Header */
+  header {
+    background-color: #ff69b4; /* Rosa forte */
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar o header */
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Estilo da Navegação */
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Espaçamento entre os itens */
+    margin-top: 1rem;
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #ff1493; /* Cor mais escura ao passar o mouse */
+  }
+  
+  /* Estilo Principal */
+  main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+  }
+  
+  main section {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    margin-bottom: 2rem;
+  }
+  
+  main h2 {
+    font-size: 2rem;
+    color: #ff69b4;
+    margin-bottom: 1.5rem;
+  }
+  
+  main p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+  
+  main img {
+    width: 50%;
+    border-radius: 10px;
+    margin-top: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Formulário de Contato */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  form label {
+    font-weight: bold;
+    color: #ff69b4;
+  }
+  
+  form input,
+  form textarea {
+    padding: 0.75rem;
+    border: 1px solid #ff69b4;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    outline: none;
+    border-color: #ff1493;
+    box-shadow: 0 0 5px rgba(255, 20, 147, 0.5);
+  }
+  
+  form button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #ff1493;
+  }
+  
+  /* Estilo do Rodapé */
+  footer {
+    background-color: #ff69b4;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  footer p {
+    font-size: 1rem;
+  }
+  
+  /* Estilo responsivo */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    main img {
+      width: 100%;
+    }
+  
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    main h2 {
+      font-size: 1.8rem;
+    }
+  }
+  
